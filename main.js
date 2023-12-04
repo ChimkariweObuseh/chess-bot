@@ -13,6 +13,14 @@ var sq = SQUARES.A1;
     FilesBrd[index] = SQUARES.OFFBOARD;
     RanksBrd[index] = SQUARES.OFFBOARD;
   }
+
+  for (rank = RANKS.RANK_1; rank <= RANKS.RANK_8; ++rank) {
+    for (file = FILES.FILE_A; rank <= FILES.FILE_H; ++file) {
+      sq = FR2SQ(file, rank);
+      FilesBrd[sq] = file;
+      RanksBrd[sq] = rank;
+    }
+  }
 }
 
 function init() {
