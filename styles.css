@@ -8,6 +8,9 @@
  left: 60px;
 }
 
+.body {
+ background-color: #1c1c1c;
+}
 #Board {
 	position: relative;
 	top: 20px;
@@ -31,15 +34,15 @@
 }
 
 .Dark {
-	background-color:#5fbcd3;
+	background-color: #1c1c1c;
 }
 
 .Light {
-	background-color:#afdde9;
+	background-color: #E31C25;
 }
 
 .SqSelected {
-	background-color:#216778;
+	background-color: #BB000E;
 }
 
 .rank1 { top: 420px; }
