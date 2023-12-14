@@ -9,7 +9,7 @@
 }
 
 body {
- background: #1c1c1c;
+ background: #a4bab7;
 }
 
 #Board {
@@ -39,11 +39,11 @@ body {
 }
 
 .Light {
-	background-color: #E31C25;
+	background-color: #bea57d;
 }
 
 .SqSelected {
-	background-color: #baf078;
+	background-color: #eff2c0;
 }
 
 .rank1 { top: 420px; }
@@ -67,42 +67,3 @@ body {
 .Piece {
 	position: absolute;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
