@@ -101,7 +101,7 @@ button {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(123, 159, 159, 0.2);
+    background: rgba(230, 223, 192, 0.8);
     animation: animate 25s linear infinite;
     bottom: -150px;
 	z-index: -1;
