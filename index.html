@@ -32,6 +32,7 @@
 			<input type="checkbox" id="easy" name="easy" value="Easy" oninput="
 				MAXDEPTH = 1;
 				NewGame(START_FEN);
+				document.getElementById('easy').disabled = true;
 				document.getElementById('medium').disabled = true;
 			    document.getElementById('hard').disabled = true;
 				document.getElementById('extreme').disabled = true;
@@ -42,6 +43,7 @@
 				MAXDEPTH = 2;
 		        NewGame(START_FEN);
 				document.getElementById('easy').disabled = true;
+				document.getElementById('medium').disabled = true;
 			    document.getElementById('hard').disabled = true;
 				document.getElementById('extreme').disabled = true;
 				console.log('medium');
@@ -52,6 +54,7 @@
 		        NewGame(START_FEN);
 				document.getElementById('medium').disabled = true;
 			    document.getElementById('easy').disabled = true;
+				document.getElementById('hard').disabled = true;
 				document.getElementById('extreme').disabled = true;
 				console.log('hard');
 				"><br/>
@@ -62,6 +65,7 @@
 				document.getElementById('medium').disabled = true;
 			    document.getElementById('hard').disabled = true;
 				document.getElementById('easy').disabled = true;
+				document.getElementById('extreme').disabled = true;
 				console.log('extreme');
 				"><br/>
 		</div>
