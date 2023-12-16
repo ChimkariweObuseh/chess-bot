@@ -27,12 +27,27 @@
 			<span id="OrderingOut">Ordering:</span><br/>
 			<span id="TimeOut">Time:</span><br/><br/>
 			<button type="button" id="NewGameButton">New Game</button><br/>
-			<span id="GameStatus"></span>
-			<select id="Difficulty">
-				<option>Easy</option>
-				<option>Medium</option>
-				<option>Hard</option>
-			</select>
+			<span id="GameStatus"></span><br/>br/>
+			<label for="easy"> Easy (2 points): </label>
+			<input type="checkbox" id="easy" name="easy" value="Easy" oninput="
+				MAXDEPTH = 1;
+				console.log('easy');
+				">
+            <label for="medium"> Medium (3 points): </label>
+            <input type="checkbox" id="medium" name="medium" value="Medium" oninput="
+				MAXDEPTH = 2;
+				console.log('medium');
+				">
+            <label for="hard"> Hard (4 points): </label>
+            <input type="checkbox" id="hard" name="hard" value="Hard" oninput="
+				MAXDEPTH = 3;
+				console.log('hard');
+				">
+            <label for="extreme"> Extreme (5 points): </label>
+            <input type="checkbox" id="extreme" name="extreme" value="Extreme" oninput="
+				MAXDEPTH = 4;
+				console.log('extreme');
+				">
 		</div>
             <ul class="circles">
                     <li></li>
