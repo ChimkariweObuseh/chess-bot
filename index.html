@@ -31,21 +31,37 @@
 			<label for="easy"> Easy (2 points): </label>
 			<input type="checkbox" id="easy" name="easy" value="Easy" oninput="
 				MAXDEPTH = 1;
+				NewGame(START_FEN);
+				document.getElementById('medium').disabled = true;
+			    document.getElementById('hard').disabled = true;
+				document.getElementById('extreme').disabled = true;
 				console.log('easy');
 				">
             <label for="medium"> Medium (3 points): </label>
             <input type="checkbox" id="medium" name="medium" value="Medium" oninput="
 				MAXDEPTH = 2;
+		        NewGame(START_FEN);
+				document.getElementById('easy').disabled = true;
+			    document.getElementById('hard').disabled = true;
+				document.getElementById('extreme').disabled = true;
 				console.log('medium');
 				">
             <label for="hard"> Hard (4 points): </label>
             <input type="checkbox" id="hard" name="hard" value="Hard" oninput="
 				MAXDEPTH = 3;
+		        NewGame(START_FEN);
+				document.getElementById('medium').disabled = true;
+			    document.getElementById('easy').disabled = true;
+				document.getElementById('extreme').disabled = true;
 				console.log('hard');
 				">
             <label for="extreme"> Extreme (5 points): </label>
             <input type="checkbox" id="extreme" name="extreme" value="Extreme" oninput="
 				MAXDEPTH = 4;
+		        NewGame(START_FEN);
+				document.getElementById('medium').disabled = true;
+			    document.getElementById('hard').disabled = true;
+				document.getElementById('easy').disabled = true;
 				console.log('extreme');
 				">
 		</div>
