@@ -13,6 +13,10 @@ $('#TakeButton').click( function () {
 
 $('#NewGameButton').click( function () {
 	NewGame(START_FEN);
+	document.getElementById('easy').disabled = false;
+	document.getElementById('medium').disabled = false;
+	document.getElementById('hard').disabled = false;
+	document.getElementById('extreme').disabled = false;
 });
 
 function NewGame(fenStr) {
