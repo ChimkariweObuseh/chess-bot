@@ -15,15 +15,16 @@
  left: 240px;
 }
 
-.cooltitle { 
- left: 1500px; 
-}
-
 body {
  background: #524632;
  color: white;
  overflow: hidden;
 }
+
+h3 {
+	text-align: center;
+}
+
 
 button {
   padding: 3px;
