@@ -29,7 +29,9 @@
 			<button type="button" id="NewGameButton">New Game</button><br/>
 			<span id="GameStatus"></span><br/><br/>
 			<label for="easy"> Easy (1 point): </label>
-			<input type="checkbox" id="easy" name="easy" value="Easy" oninput="
+			<div class="checkbox-wrapper-39">
+                         <label>
+			 <input type="checkbox" id="easy" name="easy" value="Easy" oninput="
 				MAXDEPTH = 1;
 				NewGame(START_FEN);
 				document.getElementById('easy').disabled = true;
@@ -37,9 +39,14 @@
 			    document.getElementById('hard').disabled = true;
 				document.getElementById('extreme').disabled = true;
 				console.log('easy');
-				"><br/>
-            <label for="medium"> Medium (3 points): </label>
-            <input type="checkbox" id="medium" name="medium" value="Medium" oninput="
+				">
+                <span class="checkbox"></span>
+			 </label>
+			</div><br/>
+                        <label for="medium"> Medium (3 points): </label>
+			<div class="checkbox-wrapper-39">
+                         <label>
+			 <input type="checkbox" id="medium" name="medium" value="Medium" oninput="
 				MAXDEPTH = 2;
 		        NewGame(START_FEN);
 				document.getElementById('easy').disabled = true;
@@ -47,9 +54,14 @@
 			    document.getElementById('hard').disabled = true;
 				document.getElementById('extreme').disabled = true;
 				console.log('medium');
-				"><br/>
+				">
+			    <span class="checkbox"></span>
+			 </label>
+			</div><br/>
             <label for="hard"> Hard (4 points): </label>
-            <input type="checkbox" id="hard" name="hard" value="Hard" oninput="
+			<div class="checkbox-wrapper-39">
+				<label>
+				<input type="checkbox" id="hard" name="hard" value="Hard" oninput="
 				MAXDEPTH = 3;
 		        NewGame(START_FEN);
 				document.getElementById('medium').disabled = true;
@@ -57,9 +69,14 @@
 				document.getElementById('hard').disabled = true;
 				document.getElementById('extreme').disabled = true;
 				console.log('hard');
-				"><br/>
-            <label for="extreme"> Extreme (5 points): </label>
-            <input type="checkbox" id="extreme" name="extreme" value="Extreme" oninput="
+				">
+			    <span class="checkbox"></span>
+				</label>
+			</div><br/>
+			<label for="extreme"> Extreme (5 points): </label>
+			<div class="checkbox-wrapper-39">
+				<label>
+				<input type="checkbox" id="extreme" name="extreme" value="Extreme" oninput="
 				MAXDEPTH = 4;
 		        NewGame(START_FEN);
 				document.getElementById('medium').disabled = true;
@@ -67,7 +84,10 @@
 				document.getElementById('easy').disabled = true;
 				document.getElementById('extreme').disabled = true;
 				console.log('extreme');
-				"><br/><br/>
+				">
+			    <span class="checkbox"></span>
+				</label>
+			</div><br/><br/>
 			<p style="color: green">
 				<strong>
 					GOOGLE CLASSROOM CODE: 
