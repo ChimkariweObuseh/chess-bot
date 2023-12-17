@@ -15,7 +15,9 @@
  left: 180px;
 }
 
-h3 { left: 180px; }
+.cooltitle { 
+ left: 180px; 
+}
 
 body {
  background: #524632;
