@@ -5,7 +5,7 @@ $(function() {
 });
 
 $(document).ready( function() {
-  $('#id').click( function( event_details ) {
+  $('#fenIn').click( function( event_details ) {
     $(this).select();
   });
 });
