@@ -34,7 +34,7 @@ button {
 	border-color: #c3c49e;
 }
 
-input {
+input[type=text] {
   padding: 3px;
 	background: transparent;
 	border: 1px solid;
