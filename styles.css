@@ -232,7 +232,7 @@ input[type=text] {
     display: block;
     width: inherit;
     height: inherit;
-    border: 3px solid #434343;
+    border: 3px solid white;
     border-radius: 6px;
     transition: all 0.375s;
   }
