@@ -7,16 +7,16 @@
 
 #FenInDiv {
 	position: relative;
-	left: 180px;
+	left: 240px;
 }
 
 #fenIn { 
  width: 480px;
- left: 180px;
+ left: 240px;
 }
 
 .cooltitle { 
- left: 480px; 
+ left: 720px; 
 }
 
 body {
@@ -45,7 +45,7 @@ input {
 #Board {
 	position: relative;
 	top: 20px;
-	left: 180px;
+	left: 240px;
 	width: 480px;
 	height: 480px;
 	border-style: solid;
@@ -56,7 +56,7 @@ input {
 
 #EngineOutput {
 	position: absolute;
-	left: 720px;
+	left: 780px;
 	top: 250px;	
 }
 
