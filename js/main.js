@@ -4,6 +4,12 @@ $(function() {
 	NewGame(START_FEN);
 });
 
+$(document).ready( function() {
+  $('#id').click( function( event_details ) {
+    $(this).select();
+  });
+});
+
 function InitFilesRanksBrd() {
 	
 	var index = 0;
