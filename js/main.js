@@ -154,23 +154,14 @@ function init() {
 }
 
 
-function changeColourScheme(BGHex, CirclesRGBA, DarksqHex, LightsqHex, SelectedsqHex) {
+function changeColourScheme(BGHex, CirclesRGBA, LightsqHex) {
 	document.body.style.background = BGHex;
 	const lists = document.getElementsByTagName("li");
-	const darksq = document.getElementsByClassName("Dark");
-	const lightsq = document.getElementsByClassName("Light");
 	const coolboard = document.getElementById("Board");
 	coolboard.style.borderColor = LightsqHex;
 	for (var i = 0; i <= lists.length; i++) {
 		lists[i].style.background = CirclesRGBA;
 	}
-	for (var j = 0; j <= darksq.length; j++) {
-		darksq[j].style.background = DarksqHex;
-	}
-	/*for (var k = 0; k <= lightsq.length; k++) {
-		lightsq[k].style.background = LightsqHex;
-	} */
-	lightsq.style.background = LightsqHex;
 }
 
 
