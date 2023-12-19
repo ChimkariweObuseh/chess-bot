@@ -165,7 +165,7 @@ function changeColourScheme(BGHex, CirclesRGBA, LightsqHex) {
 	}
     inputvar[1].style.borderColor = CirclesRGBA;
 	inputvar[2].style.borderColor = CirclesRGBA;
-	inputvar[3].style.borderColor = CirclesRGBA;
+	inputvar[0].style.borderColor = CirclesRGBA;
 }
 
 
