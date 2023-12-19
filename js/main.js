@@ -154,7 +154,15 @@ function init() {
 }
 
 
-
+function changeColourScheme(BGHex, CirclesRGBA, DarksqHex, LightsqHex, SelectedsqHex) {
+	document.body.style.background = BGHex;
+	const li = document.getElementsByTagName("li");
+	const darksq = document.querySelectorAll("
+	const
+	for (var i = 0; i <= li.length; i++) {
+		li[i].style.background = CirclesRGBA;
+	}
+}
 
 
 
