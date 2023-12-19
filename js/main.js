@@ -161,9 +161,9 @@ function changeColourScheme(BGHex, CirclesRGBA, LightsqHex) {
 	const lists = document.getElementsByTagName("li");
 	const inputvar = document.getElementsByTagName("input");
 	for (var i = 0; i <= lists.length; i++) {
-		lists.style.background = CirclesRGBA;
+		lists[i].style.background = CirclesRGBA;
 	  for (var j = 0; j <= inputvar.length; j++) {
-		inputvar.style.background = CirclesRGBA;
+		inputvar[j].style.background = CirclesRGBA;
 	  }
 	}
 }
