@@ -157,10 +157,18 @@ function init() {
 function changeColourScheme(BGHex, CirclesRGBA, DarksqHex, LightsqHex, SelectedsqHex) {
 	document.body.style.background = BGHex;
 	const li = document.getElementsByTagName("li");
-	const darksq = document.querySelectorAll("
-	const
+	const darksq = document.querySelectorAll("Dark");
+	const lightsq = document.querySelectorAll("Light");
+	const selected = document.querySelector("SqSelected");
+	selected.style.backgroundColor = SelectedsqHex;
 	for (var i = 0; i <= li.length; i++) {
 		li[i].style.background = CirclesRGBA;
+	}
+	for (var j = 0; j <= darksq.length; j++) {
+		darksq[j].style.backgroundColor = DarksqHex;
+	}
+	for (var k = 0; k <= lightsq.length; k++) {
+		lightsq[k].style.backgroundColor = LightsqHex;
 	}
 }
 
