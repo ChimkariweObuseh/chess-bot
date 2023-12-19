@@ -156,13 +156,13 @@ function init() {
 
 function changeColourScheme(BGHex, CirclesRGBA, DarksqHex, LightsqHex, SelectedsqHex) {
 	document.body.style.background = BGHex;
-	const li = document.getElementsByTagName("li");
+	const lists = document.getElementsByTagName("li");
 	const darksq = document.getElementsByClassName("Dark");
 	const lightsq = document.getElementsByClassName("Light");
 	const coolboard = document.getElementById("Board");
 	coolboard.style.borderColor = LightsqHex;
 	for (var i = 0; i <= li.length; i++) {
-		li[i].style.background = CirclesRGBA;
+		lists[i].style.background = CirclesRGBA;
 	}
 	for (var j = 0; j <= darksq.length; j++) {
 		darksq[j].style.background = DarksqHex;
