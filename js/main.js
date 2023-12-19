@@ -158,7 +158,11 @@ function changeColourScheme(BGHex, CirclesRGBA, LightsqHex) {
 	document.body.style.background = BGHex;
 	const lists = document.getElementsByTagName("li");
 	const coolboard = document.getElementById("Board");
+	const inputvar = document.getElementsByTagName("input");
 	coolboard.style.borderColor = LightsqHex;
+	for (var j = 0; j <= inputvar.length; j++) {
+		inputvar[j].style.background = CirclesRGBA;
+	}
 	for (var i = 0; i <= lists.length; i++) {
 		lists[i].style.background = CirclesRGBA;
 	}
