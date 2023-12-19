@@ -156,10 +156,9 @@ function init() {
 
 function changeColourScheme(BGHex, CirclesRGBA, DarksqHex, LightsqHex, SelectedsqHex) {
 	document.body.style.background = BGHex;
-	const circles = document.querySelector("circles");
 	const li = document.getElementsByTagName("li");
-	const darksq = document.querySelectorAll("Dark");
-	const lightsq = document.querySelectorAll("Light");
+	const darksq = document.getElementsByClassName("Dark");
+	const lightsq = document.getElementsByClassName("Light");
 	const coolboard = document.getElementById("Board");
 	coolboard.style.borderColor = LightsqHex;
 	for (var i = 0; i <= li.length; i++) {
