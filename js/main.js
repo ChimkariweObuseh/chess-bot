@@ -163,13 +163,13 @@ function changeColourScheme(BGHex, CirclesRGBA, DarksqHex, LightsqHex, Selecteds
 	const coolboard = document.getElementById("Board");
 	coolboard.style.borderColor = LightsqHex;
 	for (var i = 0; i <= li.length; i++) {
-		circles.li[i].style.background = CirclesRGBA;
+		li[i].style.background = CirclesRGBA;
 	}
 	for (var j = 0; j <= darksq.length; j++) {
-		coolboard.darksq[j].style.backgroundColor = DarksqHex;
+		darksq[j].style.backgroundColor = DarksqHex;
 	}
 	for (var k = 0; k <= lightsq.length; k++) {
-		coolboard.lightsq[k].style.backgroundColor = LightsqHex;
+		lightsq[k].style.backgroundColor = LightsqHex;
 	}
 }
 
