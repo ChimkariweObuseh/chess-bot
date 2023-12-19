@@ -161,7 +161,7 @@ function changeColourScheme(BGHex, CirclesRGBA, DarksqHex, LightsqHex, Selecteds
 	const lightsq = document.getElementsByClassName("Light");
 	const coolboard = document.getElementById("Board");
 	coolboard.style.borderColor = LightsqHex;
-	for (var i = 0; i <= li.length; i++) {
+	for (var i = 0; i <= lists.length; i++) {
 		lists[i].style.background = CirclesRGBA;
 	}
 	for (var j = 0; j <= darksq.length; j++) {
