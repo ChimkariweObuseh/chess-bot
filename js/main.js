@@ -167,9 +167,10 @@ function changeColourScheme(BGHex, CirclesRGBA, DarksqHex, LightsqHex, Selecteds
 	for (var j = 0; j <= darksq.length; j++) {
 		darksq[j].style.background = DarksqHex;
 	}
-	for (var k = 0; k <= lightsq.length; k++) {
+	/*for (var k = 0; k <= lightsq.length; k++) {
 		lightsq[k].style.background = LightsqHex;
-	}
+	} */
+	lightsq.style.background = LightsqHex;
 }
 
 
