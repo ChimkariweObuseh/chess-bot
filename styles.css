@@ -222,7 +222,7 @@ input[type=text] {
    transform: rotate(45deg);
    width: 14px;
    margin-left: 12px;
-   border-color: #24c78e;
+   border-color: white;
    border-top-color: transparent;
    border-left-color: transparent;
    border-radius: 0;
@@ -232,7 +232,7 @@ input[type=text] {
     display: block;
     width: inherit;
     height: inherit;
-    border: 3px solid #f5f5dc;
+    border: 3px solid black;
     border-radius: 6px;
     transition: all 0.375s;
   }
