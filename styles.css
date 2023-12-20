@@ -39,7 +39,7 @@ input[type=text] {
 	background: transparent;
 	border: 1px solid;
 	border-radius: 4px;
-	border-color: #c3c49e;
+	border-color: black;
 	height: 10px;
 }
 
@@ -232,7 +232,7 @@ input[type=text] {
     display: block;
     width: inherit;
     height: inherit;
-    border: 3px solid white;
+    border: 3px solid #f5f5dc;
     border-radius: 6px;
     transition: all 0.375s;
   }
