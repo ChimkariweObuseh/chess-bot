@@ -16,7 +16,7 @@
 }
 
 body {
- background: #524632;
+ background: #033f63;
  color: white;
  overflow: hidden;
 }
@@ -68,15 +68,15 @@ input[type=text] {
 }
 
 .Dark {
-	background-color: transparent;
+	background-color: rgba(124, 152, 133, 0.4);
 }
 
 .Light {
-	background-color: #f5f5dc;
+	background-color: #fedc97;
 }
 
 .SqSelected {
-	background-color: rgba(143, 126, 79, 0.8);
+	background-color: rgba(181, 182, 130, 0.6);
 }
 
 .rank1 { top: 420px; }
@@ -117,7 +117,7 @@ input[type=text] {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(143, 126, 79, 0.8);
+    background: rgba(40, 102, 110, 0.8);
     animation: animate 25s linear infinite;
     bottom: -150px;
     z-index: -1;
