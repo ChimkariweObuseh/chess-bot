@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Iterion Chess Bot</title>	
+		<link href="styles.css" rel="stylesheet" type="text/css">	
+		<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+	</head>
+	<body>
+		<header class="cooltitle">
+			<h3 class="cooltitle">IterionMAX ver. 2.2.0</h3>			
+		</header>	
+		<div id="FenInDiv">
+			Fen:<br/>
+			<input type="text" id="fenIn"/>		
+			<button type="button" id="SetFen">Set Position</button>			
+		</div>		
+		<div id="Board">
+		</div>
+		<div id="EngineOutput"><br/>
+			<select id="ThinkTimeChoice" style="display: none">
+			  <option value="10" style="display: none">10s</option>
+			</select>
+			<span id="DepthOut">Depth:</span><br/>
+			<span id="ScoreOut">Score:</span><br/>
+			<span id="NodesOut">Nodes:</span><br/>
+			<span id="OrderingOut">Ordering:</span><br/>
+			<span id="TimeOut">Time:</span><br/><br/>
+			<button type="button" id="NewGameButton">New Game</button><br/>
+			<span id="GameStatus"></span><br/><br/>
+			<label for="easy"> Easy (1 point): </label><br/>
+			<div class="checkbox-wrapper-39">
+                         <label>
+			 <input type="checkbox" id="easy" name="easy" value="Easy" oninput="
+				MAXDEPTH = 1;
+				NewGame(START_FEN);
+				document.getElementById('easy').disabled = true;
+				document.getElementById('medium').disabled = true;
+			    document.getElementById('hard').disabled = true;
+				document.getElementById('extreme').disabled = true;
+				changeColourScheme('#8fc93a', 'rgba(194, 234, 186, 0.8)');
+				">
+                <span class="checkbox"></span>
+			 </label>
+			</div>
+                        <label for="medium"> Medium (3 points): </label><br/>
+			<div class="checkbox-wrapper-39">
+                         <label>
+			 <input type="checkbox" id="medium" name="medium" value="Medium" oninput="
+				MAXDEPTH = 2;
+		        NewGame(START_FEN);
+				document.getElementById('easy').disabled = true;
+				document.getElementById('medium').disabled = true;
+			    document.getElementById('hard').disabled = true;
+				document.getElementById('extreme').disabled = true;
+				changeColourScheme('#b8a448', 'rgba(237, 247, 181, 0.8)');
+				">
+			    <span class="checkbox"></span>
+			 </label>
+			</div>
+            <label for="hard"> Hard (4 points): </label><br/>
+			<div class="checkbox-wrapper-39">
+				<label>
+				<input type="checkbox" id="hard" name="hard" value="Hard" oninput="
+				MAXDEPTH = 3;
+		        NewGame(START_FEN);
+				document.getElementById('medium').disabled = true;
+			    document.getElementById('easy').disabled = true;
+				document.getElementById('hard').disabled = true;
+				document.getElementById('extreme').disabled = true;
+				changeColourScheme('#bf2626', 'rgba(90, 0, 1, 0.8)');
+				">
+			    <span class="checkbox"></span>
+				</label>
+			</div>
+			<label for="extreme"> Extreme (5 points): </label><br/>
+			<div class="checkbox-wrapper-39">
+				<label>
+				<input type="checkbox" id="extreme" name="extreme" value="Extreme" oninput="
+				MAXDEPTH = 4;
+		        NewGame(START_FEN);
+				document.getElementById('medium').disabled = true;
+			    document.getElementById('hard').disabled = true;
+				document.getElementById('easy').disabled = true;
+				document.getElementById('extreme').disabled = true;
+				changeColourScheme('#2e0404', 'rgba(94, 0, 0, 0.8)');
+				">
+			    <span class="checkbox"></span>
+				</label>
+			</div>
+			<p>By Chimkariwe Obuseh</p>
+		</div>
+            <ul class="circles" id="coolbgstuf">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+		
+		<script src="js/jquery-1.10.1.min.js"></script>		
+		<script src="js/defs.js"></script>	
+		<script src="js/io.js"></script>	
+		<script src="js/board.js"></script>	
+		<script src="js/movegen.js"></script>	
+		<script src="js/makemove.js"></script>		
+		<script src="js/evaluate.js"></script>	
+		<script src="js/pvtable.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/perft.js"></script>
+		<script src="js/gui.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
