@@ -5,7 +5,7 @@
 		<title>Iterion Chess Bot</title>	
 		<link href="styles.css" rel="stylesheet" type="text/css">	
 		<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
-
+<script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
 	</head>
 	<body>
 		<header class="cooltitle">
@@ -106,6 +106,7 @@
 				document.getElementById('hard').disabled = true;
 				document.getElementById('extreme').disabled = true;
 				changeColourScheme('#000', 'rgba(255, 255, 255)');
+					document.getElementById('Board').classList.add('glitch');
 				">
 			    <span class="checkbox"></span>
 				</label>
