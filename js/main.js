@@ -1,3 +1,6 @@
+let gl = Object.create(glitch_exec);
+                gl.start(document.body);
+
 $(function() {
 	init();
 	console.log("Main Init Called");	
