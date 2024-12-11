@@ -1,4 +1,3 @@
-
 $(function() {
 	init();
 	console.log("Main Init Called");	
