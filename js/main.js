@@ -1,5 +1,4 @@
-let gl = Object.create(glitch_exec);
-                gl.start(document.body);
+
 
 $(function() {
 	init();
