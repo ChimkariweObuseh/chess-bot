@@ -112,7 +112,23 @@
 				document.getElementById('hard').disabled = true;
 				document.getElementById('extreme').disabled = true;
 				changeColourScheme('#000', 'rgba(255, 255, 255)');
-					document.getElementById('Board').classList.add('glitch');
+					PowerGlitch.glitch(
+    '#Board',{
+  'hideOverflow': true,
+  'timing': {
+    'duration': 3950
+  },
+  'shake': {
+    'velocity': 60,
+    'amplitudeX': 0.03,
+    'amplitudeY': 0
+  },
+  'slice': {
+    'count': 3,
+    'velocity': 4,
+    'maxHeight': 0.02
+  }
+}
 				">
 			    <span class="checkbox"></span>
 				</label>
