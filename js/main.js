@@ -151,7 +151,6 @@ function init() {
 	InitBoardVars();
 	InitMvvLva();
 	InitBoardSquares();
-	PowerGlitch.glitch('.circle')
 }
 
 
